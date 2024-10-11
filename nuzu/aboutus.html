@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('bg.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      color: #fff; /* Set default text color to white for better readability on dark backgrounds */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Overlay for better readability */
+    main {
+      background-color: rgba(0, 0, 0, 0.6); /* Black overlay with opacity */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 50px auto; /* Center the main content */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 20px 0;
+      color: #fff;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #ffdd57; /* Use a contrasting color for headings */
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-size: 1em;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">BookWorld</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="bookcat.html">Book Categories</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="collection.html">Collection</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="register.html">Signup</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Our Mission</h2>
+      <p>At [Your Company Name], our mission is to provide a comprehensive platform for book lovers to discover, explore, and enjoy literature across various genres.</p>
+    </section>
+
+    <section>
+      <h2>Our Story</h2>
+      <p>Founded in [Year], we started as a small community of book enthusiasts. Over the years, we have grown into a vibrant hub for readers to connect and share their love for books.</p>
+    </section>
+
+    <section>
+      <h2>Our Team</h2>
+      <p>We are a passionate team of bibliophiles dedicated to curating an exceptional experience for our users. Meet our team of editors, curators, and tech enthusiasts who make it all happen!</p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out to us at <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; [Year] [Your Company Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

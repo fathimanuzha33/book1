@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Categories | BookWorld</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+ /* Set the background image for the body */
+body {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* White text for contrast */
+  position: relative;
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+/* Apply a dark overlay to the entire page, including areas beyond the content */
+body::before {
+  content: '';
+  position: fixed; /* Change from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+  z-index: 1;
+  pointer-events: none; /* Allow interaction with content below the overlay */
+}
+
+/* Apply a higher z-index to content to ensure it appears above the overlay */
+main,
+nav,
+header,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add some padding and background to the category boxes for better visibility */
+.category-box {
+  background-color: rgba(255, 255, 255, 0.85); /* Light semi-transparent background */
+  color: #333; /* Dark text color for better readability */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-box:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-5px);
+}
+
+/* Increase text shadow and font size for headings */
+h1 {
+    color: antiquewhite;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Stronger text shadow for better visibility */
+  font-size: 2.5rem; /* Increase font size */
+}
+
+h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Text shadow for better readability */
+}
+
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust nav links */
+.nav-link {
+  color: #fff; /* Ensure nav links are readable against the background */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">BookWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bookcat.html">Book Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collection.html">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <main class="container">
+    <header>
+      <h1 class="text-center my-4">Book Categories</h1>
+    </header>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Fiction</h3>
+          <p>Explore a vast selection of fictional works including novels, short stories, and more.</p>
+          <a href="fiction.html" class="btn btn-primary">Explore Fiction</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Non-Fiction</h3>
+          <p>Dive into the real world with biographies, self-help, history, and more.</p>
+          <a href="nonfiction.html" class="btn btn-primary">Explore Non-Fiction</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Science Fiction</h3>
+          <p>Discover new worlds and futuristic technologies with our Sci-Fi selection.</p>
+          <a href="scifi.html" class="btn btn-primary">Explore Sci-Fi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Fantasy</h3>
+          <p>Immerse yourself in magical worlds with our collection of fantasy books.</p>
+          <a href="fantasy.html" class="btn btn-primary">Explore Fantasy</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Mystery & Thriller</h3>
+          <p>Get your heart racing with suspenseful mystery and thrilling crime novels.</p>
+          <a href="mystery.html" class="btn btn-primary">Explore Mystery</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category-box">
+          <h3>Children's Books</h3>
+          <p>Fun, educational, and inspiring reads for young readers of all ages.</p>
+          <a href="children.html" class="btn btn-primary">Explore Children's Books</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-center mt-5">
+    <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

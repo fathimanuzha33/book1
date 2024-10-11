@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | BookWorld</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Set the background image for the body */
+        body {
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff; /* White text for contrast */
+            position: relative;
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+
+        /* Apply a dark overlay to the entire page */
+        body::before {
+            content: '';
+            position: fixed; /* Change from absolute to fixed */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+            z-index: 1;
+            pointer-events: none; /* Allow interaction with content below the overlay */
+        }
+
+        /* Apply a higher z-index to content */
+        main, nav, header, footer {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Style for book cards */
+        .book-card {
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+            font-size: 2.5rem;
+        }
+        
+        h3 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* New styles for images */
+        .image-container {
+            width: 100%; /* Full width of the card */
+            height: 200px; /* Set a fixed height */
+            overflow: hidden; /* Hide overflow for any extra content */
+            display: flex; /* Flexbox to center images */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Max width to prevent overflow */
+            max-height: 100%; /* Max height to prevent overflow */
+            object-fit: contain; /* Ensures the entire image fits within the container */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">BookWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bookcat.html">Book Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="collection.html">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h1 class="text-center my-4">Our Book Collection</h1>
+        </header>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>The Great Gatsby</h3>
+                    <div class="image-container">
+                        <img src="greatgabsy.jpg" alt="The Great Gatsby" class="img-fluid">
+                    </div>
+                    <p> F. Scott Fitzgerald</p>
+                    <a href="great_gatsby.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>To Kill a Mockingbird</h3>
+                    <div class="image-container">
+                        <img src="kill.jpg" alt="To Kill a Mockingbird" class="img-fluid">
+                    </div>
+                    <p>Harper lee</p>
+                    <a href="to_kill_a_mockingbird.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>1984</h3>
+                    <div class="image-container">
+                        <img src="a1984.webp" alt="1984" class="img-fluid">
+                    </div>
+                    <p>George Orwell</p>
+                    <a href="1984.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>Pride and Prejudice</h3>
+                    <div class="image-container">
+                        <img src="pride.webp" alt="Pride and Prejudice" class="img-fluid">
+                    </div>
+                    <p>Jane Austen</p>
+                    <a href="pride_and_prejudice.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div> 
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>The Catcher in the Rye</h3>
+                    <div class="image-container">
+                        <img src="rye.jpg" alt="The Catcher in the Rye" class="img-fluid">
+                    </div>
+                    <p>J.d salinger </p>
+                    <a href="catcher_in_the_rye.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="book-card">
+                    <h3>The Hobbit</h3>
+                    <div class="image-container">
+                        <img src="hobbit.jpg" alt="The Hobbit" class="img-fluid">
+                    </div>
+                    <p>J.R.R tolkein</p>
+                    <a href="the_hobbit.html" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html
